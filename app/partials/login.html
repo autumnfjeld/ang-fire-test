@@ -1,0 +1,44 @@
+
+<div >
+  <button ng-click="facebookLogin()">
+    Login with Facebook</button>
+</div>
+
+<div >
+  <button ng-click="twitterLogin()">
+    Login with Twitter</button>
+</div>
+
+<br>
+<br>
+If we do user login
+<!-- FORM -->
+<form ng-submit="emailLogin()">
+  <!-- NAME -->
+  <div id="name-group" class="form-group">
+    <label>Email</label>
+    <input ng-model="email" type="text" name="email" placeholder="your name">
+  </div>
+  <!-- SUBMIT BUTTON -->
+  <button type="submit" class="btn btn-success btn-lg btn-block"> 
+    Click this ugly button to log in with email.
+  </button>
+</form>
+<br>
+<br>
+<!-- FORM -->
+<h2> Create Account </h2>
+<form ng-submit="createAccount()">
+  <div >
+    <label>Email</label>
+    <input ng-model="email" type="text" name="email" placeholder="your name">
+  </div>
+   <div >
+    <label>Password</label>
+    <input ng-model="password" type="text" name="email" placeholder="your name">
+  </div>
+  <!-- SUBMIT BUTTON -->
+  <button type="submit" class="btn btn-success btn-lg btn-block"> 
+    Click this ugly button to create account with email.
+  </button>
+</form>
